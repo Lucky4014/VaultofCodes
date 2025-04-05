@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+    <div class="background-container"></div>
+    <header>
+        <nav>
+            <div class="logo">EditKaro.in</div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div class="content">
+            <h1>Innovate, Create, Captivate</h1>
+            <p1>Creations and Thoughts</p1>
+            <p2>↓</p2>
+        </div>
+    </section>
+
+    <section class="featured-work" id="work">
+        <h1>Featured Work</h1>
+        <div class="grid-container">
+            <div class="grid-item" onclick="openModal('video1')">
+                <img src="img/game.jpg" alt="">
+                <p>Gaming Videos</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video2')">
+                <img src="img/wedding.jpg" alt="">
+                <p>Wedding Video</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video3')">
+                <img src="img/documentory.jpg" alt="">
+                <p>Documentary Video</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video4')">
+                <img src="img/anime.jpg" alt="">
+                <p>Anime Video</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video5')">
+                <img src="img/ecommerce.jpg" alt="">
+                <p>eCommerce ads</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video6')">
+                <img src="img/long.jpg" alt="">
+                <p>Long Video</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video7')">
+                <img src="img/YTshorts.jpeg" alt="">
+                <p>YT Shorts</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video8')">
+                <img src="img/sport.jpg" alt="">
+                <p>Sports Edit</p>
+            </div>
+            <div class="grid-item" onclick="openModal('video9')">
+                <img src="img/product.jpg" alt="">
+                <p>Product ads</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <video id="modalVideo" controls></video>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <!-- what i do -->
+    <section class="services" id="about">
+        <h1>Services</h1>
+        <h2>What I Do</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>Graphic Designer</h3>
+                <p>Creating visually appealing graphics and branding materials.</p>
+            </div>
+            <div class="service-box">
+                <h3>Videographer</h3>
+                <p>Capturing stunning video footage with professional equipment.</p>
+            </div>
+            <div class="service-box">
+                <h3>Video Editor</h3>
+                <p>Editing and enhancing videos for storytelling and engagement.</p>
+            </div>
+            <div class="service-box">
+                <h3>Animator</h3>
+                <p>Bringing ideas to life with 2D and 3D animations.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About us -->
+    <section class="about-us">
+        <div class="container">
+            <h1>About Editkaro.in</h1>
+            <p class="intro">
+                Welcome to <strong>Editkaro.in</strong>, your one-stop solution for high-quality video and image editing
+                services.
+                Our mission is to bring creativity to life with precision and professionalism.
+            </p>
+
+            <div class="about-content">
+                <div class="about-box">
+                    <h2>🎯 Our Mission</h2>
+                    <p>To provide seamless, professional, and high-quality editing solutions that empower businesses,
+                        creators, and individuals.</p>
+                </div>
+                <div class="about-box">
+                    <h2>🔭 Our Vision</h2>
+                    <p>To become the leading editing service provider, revolutionizing the way digital content is
+                        crafted.</p>
+                </div>
+                <div class="about-box">
+                    <h2>👨‍💻 Meet Our Team</h2>
+                    <p>Our talented team of editors, designers, and creative professionals work tirelessly to deliver
+                        perfection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h1 data-aos="fade-up">Contact Me</h1>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+                <input type="number" name="number" placeholder="Mobile Number">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" id="submit-btn" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by @editkaro | All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+
+
+<script defer src="script.js"></script>
+
+</html>

@@ -1,0 +1,145 @@
+@media (max-width: 1500px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p2 {
+        margin-top: 0px;
+    }
+
+    .input-box input,
+    textarea {
+        width: 100%;
+    }
+
+
+}
+
+
+@media (max-width: 950px) {
+
+    /* for navbar */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background: white;
+        padding: 20px;
+        text-align: right;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* for header */
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p1 {
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+
+    .hero p2 {
+        font-size: 5rem;
+        margin-top: 30px;
+    }
+
+    /* for feature */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+    }
+
+    /* for service */
+    .services {
+        padding: 80px 20px;
+    }
+
+    .services h1 {
+        font-size: 45px;
+    }
+
+    .services h2 {
+        font-size: 20px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        /* Stacks items in one column */
+    }
+
+    /* About us */
+    .about-us h1 {
+        font-size: 40px;
+    }
+
+    .about-us .intro {
+        font-size: 18px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* for contact */
+
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    .contact form {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    /* for navbar */
+    nav {
+        padding: 0;
+    }
+
+    /* for header */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p1 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .hero p2 {
+        font-size: 5rem;
+        margin-top: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* 2 columns on tablets */
+    }
+
+    /* contact */
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+}
